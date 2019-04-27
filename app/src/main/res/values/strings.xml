@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">Rakesh App</string>
     <string name="count">Count</string>
     <string name="login">Login</string>
     <string name="countInitialValue">0</string>
+    <string name="diceRoller">Dice Roller</string>
+    <string name="rollTextView">Dice Rolled</string>
+    <string name="rollBtnRoll">Roll</string>
+    <string name="mainBtnRoll">Roll Activity</string>
 </resources>

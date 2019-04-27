@@ -1,5 +1,6 @@
 package com.rakesh.myapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,8 +22,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun countUp(view: View){
-        var count: Int = Integer.parseInt(txtCount.text.toString())
+        var count: Int = txtCount.text.toString().toInt()
         count++
         txtCount.setText (count.toString())
     }
+
+    private fun luncherDiceRoller(view: View){
+        Log.d("MainActivity", "Dice Roller Button Clicked")
+        val intent = Intent(this, DiceRollerActivity::class.java)
+        startActivity(intent)
+    }
+
 }
