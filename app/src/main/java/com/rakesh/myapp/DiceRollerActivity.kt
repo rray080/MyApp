@@ -20,9 +20,11 @@ class DiceRollerActivity : AppCompatActivity() {
     private fun rollDice(){
         Toast.makeText(this, "Roll Button Clicked", Toast.LENGTH_SHORT).show()
         txtRollHeader.text = getString(R.string.rollTextView)
+
         btnRoll.setEnabled(false)
         Thread.sleep(5000)
         btnRoll.setEnabled(true)
+        
         val randomInt = Random.nextInt(6)
         txtRollHeader.text = randomInt.toString()
     }
