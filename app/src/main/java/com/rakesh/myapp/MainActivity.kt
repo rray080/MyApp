@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", "Hello World")
+
+        //call for ArithmeticActivity
+        btnArithmeticActivity.setOnClickListener { lunchArithmeticActivity() }
     }
 
     fun toastMe(view: View){
@@ -27,10 +30,15 @@ class MainActivity : AppCompatActivity() {
         txtCount.setText (count.toString())
     }
 
-    private fun luncherDiceRoller(view: View){
+    fun luncherDiceRoller(view: View){
         Log.d("MainActivity", "Dice Roller Button Clicked")
         val intent = Intent(this, DiceRollerActivity::class.java)
         startActivity(intent)
+    }
+
+    private fun lunchArithmeticActivity(){
+        Log.d("MainActivity", "Arithmetic Activity Button Clicked")
+        startActivity(Intent(this, ArithmeticActivity::class.java))
     }
 
 }

@@ -24,7 +24,7 @@ class DiceRollerActivity : AppCompatActivity() {
         btnRoll.setEnabled(false)
         Thread.sleep(5000)
         btnRoll.setEnabled(true)
-        
+
         val randomInt = Random.nextInt(6)
         txtRollHeader.text = randomInt.toString()
     }
